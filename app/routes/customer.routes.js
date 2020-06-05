@@ -1,10 +1,11 @@
 module.exports = app => {
-  const customers = require("../controllers/customer.controller.js");
+ // const customers = require("../controllers/customer.controller.js");
+  
 
  
 
   // Retrieve all Customers
-  app.get("/customers", require('./routes/api/users'));
+  app.get("/customers", require('./models/customer.model'));
 
 
 };
